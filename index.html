@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalenger 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+       
+     
+  </head>
+  <header>
+    <div class="logoAlura"> 
+      <img src="/src/logo.png" alt="logo alura" class="logo__R">
+    </div>
+
+        
+  </header>
+    <body class="Plano_de_fundo">
+      <main >
+          <textarea placeholder="digite Seu texto" class="input-texto" cols="30" rows="10"></textarea>
+        
+          
+          <section>
+            
+            <p id="aviso"><img src="/src/aviso.png" alt="aviso" class="aviso_img">Apenas letras minusculas e sem acento</p>       
+            <button onclick="ButtonEncriptar()" class="criptografar" >criptografar</button>
+            <button onclick="ButtonDesencriptar()" class="desencriptador">desencriptador</button>
+          </section>
+
+          <section>
+            <div id ="div-aparece">
+              <textarea class="output-texto" id="mensagem"cols="40" rows="6" placeholder="Nenhuma mensagem encontrada"></textarea>
+              <input class="copiar" type="submit" value="Copiar" id="btn-copiar">
+            </div>
+
+          </section>
+          <section class="mensagem">
+            <div id="div-desaparece" class="message-box-div">
+              <img src="/src/High quality products 1 1.png"> 
+              <h2>Nenhuma mensagem encontrada</h2>
+              <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+            </div>      
+              
+                  
+            
+            
+        
+    
+        
+      </main>
+    </body>
+    <script src="script.js"></script>
+</html>
