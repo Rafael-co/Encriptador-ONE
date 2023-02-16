@@ -5,19 +5,20 @@
     line-height: 150%;
    
 }
-
+html{
+    width: 100vw;
+    height: 100vh;
+}
 .Plano_de_fundo {
 position: relative;
 background: #F3F5FC;
-position: relative;
-width: 1440px;
-height: 1024px;
+
 }
 .Plano_de_fundo p{
 /*posição do texto*/
 position: absolute;
-width: 680px;
-height: 48px;
+width: 10%;
+height: 2%;
 left: 240px;
 top: 168px;
 /*fonte do texto*/
@@ -29,10 +30,10 @@ color: #0A3871;
 }
 .input-texto{
     position: absolute;
-    left: 240px;
-    top: 168px;
+    left: 340px;
+    top: 150px;
     width: 343px;
-    height: 624px;
+    height: 57vh;
     color: #0A3871;
     resize: none;
     background:transparent;
@@ -45,7 +46,9 @@ color: #0A3871;
     border: none;
     outline: none;
    }
-
+.button__criptografar{
+    display: flex;
+}
 
 .logoAlura {
     position:absolute;
@@ -55,14 +58,20 @@ color: #0A3871;
     bottom: 89.8%;
 
 }
+.btn{
+    display: flex;
+    position: absolute;
+    top: 650px;
+    left: 160px;
+    bottom: 72px;
+    right: 872px;
+   
+
+}
 .criptografar{
     /*posição do botão*/
-    position: absolute;
-    top: 869px;
-    left: 240px;
-    bottom: 72px;
-    right: 872px; 
-    margin-top: 16px;
+  
+    margin-right: 10px;
     /*tamanho do botão*/
     width: 328px;
     height: 67px;
@@ -78,12 +87,7 @@ color: #0A3871;
     color: #FFFFFF;
 }
 .desencriptador{
-    /*posição do botão*/
-    position: absolute;
-    top: 885px;
-    left: 592px;
-    bottom: 72px;
-    right: 520px; 
+    
     /*tamanho do botão*/
     width: 328px;
     height: 67px;
@@ -100,15 +104,6 @@ color: #0A3871;
     color: #0A3871
 }
 #aviso{
-    position: absolute;
-    top: 851px;
-    right: 948px;
-    left:264px;
-    bottom: 155px;
-    display: inline;
-    
-
-    
     
     width: 245px;
     height: 18px;
@@ -124,7 +119,7 @@ opacity: 0.8;
     position: absolute;
     margin:40px 40px 40px 1000px;
     width: 400px;
-    height: 944px;
+    height: 82vh;
     padding: 30px;
     
     color:#495057;;
@@ -140,16 +135,12 @@ opacity: 0.8;
 }
 .copiar{
     
-
-    
-    
-  
     position: absolute;
     width: 336px;
     height: 67px;
     
-    left: 1032px;
-    top: 885px;
+    left: 1060px;
+    top: 650px;
     
     
     border: 1px solid #0A3871;
@@ -165,25 +156,26 @@ opacity: 0.8;
     line-height: 19px;
     text-align: center;
     color: #0A3871;
+    z-index: 5;
 }
 .copiar:hover{
     cursor: grab;
 }
 .message-box-div{
-    position: absolute;
+    position: relative;
     /*margin:40px 40px 40px 1000px;*/
     top: 40PX;
     right: 40PX;
     left: 1000PX;
-    bottom: 40PX;
+    bottom: 42PX;
     border-radius:10PX ;
     padding: 32px;
 
 
     width: 400px;
-    height: 944px;
+    height: 78vh;
   
-  
+    z-index: 3;
 }
 .message-box-div img{
     margin-left: auto;
@@ -204,6 +196,7 @@ opacity: 0.8;
     line-height: 120%;
     text-align: center;
     color: #343A40;
+    
 }
 .mensagem h3{
     width: 336px;
@@ -216,6 +209,9 @@ opacity: 0.8;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
+}
+.message-box-div{
+    height: 80vh;
 }
 .message-box-div, .message-box-div img {
     padding-top: 40px;

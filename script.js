@@ -6,7 +6,7 @@ const output_txt = document.querySelector(".output-texto");
 
 
 function ButtonEncriptar(){
-const txtEncriptado = encriptar(input_txt.value);
+const txtEncriptado = encriptar(input_txt.value).toLowerCase();
 output_txt.value=txtEncriptado;
 aparece();
 
@@ -29,7 +29,7 @@ return texto;
 }
 
 function ButtonDesencriptar (){
-const txt_des = desencriptar(input_txt.value);
+const txt_des = desencriptar(input_txt.value).toLowerCase();
 output_txt.value= txt_des;
 aparece();
 
